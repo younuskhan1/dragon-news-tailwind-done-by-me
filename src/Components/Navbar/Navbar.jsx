@@ -13,7 +13,7 @@ const Navbar = () => {
             </div>
             <h1 className="text-center text-[18px] pt-2 text-[#706F6F]">Journalism Without Fear or Favour</h1>
             <TimeTable></TimeTable>
-            <div className="w-[90%] h-[70px] bg-[#f3f3f3] m-auto flex justify-center items-center">
+            <div className="w-[99%] md:w-[98%] lg:w-[90%] h-[70px] bg-[#f3f3f3] m-auto flex justify-center items-center">
                 <div className="w-[98%] flex">
                     <button className="w-[160px] h-[48px] bg-[#d72050] mr-3 text-white">Breaking News</button>
                     <Marquee pauseOnHover = {true} speed={80}>
@@ -25,19 +25,17 @@ const Navbar = () => {
                     </Marquee>
                 </div>
             </div>
-            <div className="flex justify-end w-[90%] m-auto">
-                <div className="w-[60%] h-[70px] flex justify-between mr-0 items-center">
+                <div className="w-[98%] lg:w-[90%] h-[70px] flex justify-between m-auto items-center">
                     <ul className="flex text-[#706F6F]">
-                        <li className="mr-5 cursor-pointer">Home</li>
-                        <li className="mr-5 cursor-pointer">About</li>
+                        <li className="mr-2 md:mr-5 cursor-pointer">Home</li>
+                        <li className="mr-2 md:mr-5 cursor-pointer">About</li>
                         <li className="cursor-pointer">Career</li>
                     </ul>
                     <ul className="flex">
-                        <li><img className="w-[35px] h-[35px] mr-4 cursor-pointer" src={user} alt="" /></li>
+                        <li><img className="w-[35px] h-[35px] mr-2 ml-2 md:ml-0 md:mr-4 cursor-pointer" src={user} alt="" /></li>
                         <li><button className="bg-[#403f3f] text-white w-[90px] h-[35px] text-[18px]">Login</button></li>
                     </ul>
                 </div>
-            </div>
         </div>
     );
 };
