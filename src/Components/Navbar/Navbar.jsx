@@ -14,8 +14,8 @@ const Navbar = () => {
             <h1 className="text-center text-[18px] pt-2 text-[#706F6F]">Journalism Without Fear or Favour</h1>
             <TimeTable></TimeTable>
             <div className="w-[90%] h-[70px] bg-[#f3f3f3] m-auto flex justify-center items-center">
-                <div className="flex">
-                    <button className="btn bg-[#d72050] mx-3 text-white">Breaking News</button>
+                <div className="w-[98%] flex">
+                    <button className="w-[160px] h-[48px] bg-[#d72050] mr-3 text-white">Breaking News</button>
                     <Marquee pauseOnHover = {true} speed={80}>
                         <Link className="mr-3 text-[18px] text-red-900" to = "/">I can be a React component, multiple React components, or just some text.</Link>
                         <Link className="mr-3 text-[18px] text-red-900" to = "/">I can be a React component, multiple React components, or just some text.</Link>
@@ -27,7 +27,7 @@ const Navbar = () => {
             </div>
             <div className="flex justify-end w-[90%] m-auto">
                 <div className="w-[60%] h-[70px] flex justify-between mr-0 items-center">
-                    <ul className="flex">
+                    <ul className="flex text-[#706F6F]">
                         <li className="mr-5 cursor-pointer">Home</li>
                         <li className="mr-5 cursor-pointer">About</li>
                         <li className="cursor-pointer">Career</li>
