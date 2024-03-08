@@ -4,7 +4,7 @@ import family from "../../assets/2.png";
 import footballGround from "../../assets/3.png";
 
 const LeftSideNews = ({categoriesNames}) => {
-    console.log(categoriesNames);
+    // console.log(categoriesNames);
 
     return (
         <div className="w-[100%] lg:w-[22%] mb-5">
