@@ -1,37 +1,28 @@
-import { useEffect, useState } from "react";
+import PropTypes from 'prop-types'; // ES6
 import NewsCard from "../NewsCard/NewsCard";
 
-const MiddleSideNews = () => {
-
-    const [bulletins, setBulletins] = useState([]);
-    // console.log(bulletins);
-
-    useEffect(()=>{
-        const fetchData = async()=>{
-            try{
-                const URL = `news.json`;
-                const res = await fetch(URL);
-                const data = await res.json();
-                setBulletins(data);
-            }catch (error){
-                console.log(error);
-            }
-        };
-        fetchData();
-    },[])
+const MiddleSideNews = ({newsData, categoryData}) => {
+    // console.log(newsData);
 
     return (
         <div className="w-[100%] lg:w-[50%]">
             <h1 className="text-center text-black text-xl font-semibold">Dragon News Home</h1>
             <div>
                 <ul>
-                    {
-                        bulletins.map((bulletin)=><NewsCard key={bulletin._id} bulletin = {bulletin}></NewsCard>)
+                    {   
+                        categoryData?.length? categoryData?.map((anews)=><NewsCard key={anews._id} anews= {anews}></NewsCard>)
+                        :
+                        newsData?.map((anews)=><NewsCard key={anews._id} anews= {anews}></NewsCard>)
+                        
                     }
                 </ul>
             </div>
         </div>
     );
 };
+MiddleSideNews.propTypes = {
+    newsData:PropTypes.array.isRequired,
+    categoryData:PropTypes.array.isRequired,
+}
 
 export default MiddleSideNews;

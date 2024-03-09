@@ -13,7 +13,7 @@ import ErrorElement from "../ErrorElement/ErrorElement";
         children : [
            {
             path : "/",
-            loader: ()=>fetch("/categories.json"),
+            loader: () => fetch("/news.json"),
             element : <Home></Home>,
            },
            {
