@@ -13,15 +13,15 @@ const RightSideNews = () => {
             </div>
             <div className="mt-5">
                 <h1 className="text-[#403f3f] font-bold mb-3">Find Us On</h1>
-                <div className="w-full h-full flex justify-start items-center bg-white py-2 pl-3 border-[1.5px] rounded-md mb-1">
+                <div className="w-full h-full flex justify-start items-center bg-white py-2 pl-3 border-[1.5px] rounded-md mb-1 cursor-pointer">
                     <i className='bx bxl-facebook text-[#2227F2] text-xl w-[25px] h-[25px] bg-slate-100 rounded-full flex justify-center items-center'></i>
                     <p className="pl-4 text-[#9f9f9f]">Facebook</p> 
                 </div>
-                <div className="w-full h-full flex justify-start items-center bg-white py-2 pl-3 border-[1.5px] rounded-md mb-1">
+                <div className="w-full h-full flex justify-start items-center bg-white py-2 pl-3 border-[1.5px] rounded-md mb-1 cursor-pointer">
                     <i className='bx bxl-twitter text-[#22D8F2] text-xl w-[25px] h-[25px] bg-slate-100 rounded-full flex justify-center items-center'></i>
                     <p className="pl-4 text-[#9f9f9f]">Twitter</p> 
                 </div>
-                <div className="w-full h-full flex justify-start items-center bg-white py-2 pl-3 border-[1.5px] rounded-md">
+                <div className="w-full h-full flex justify-start items-center bg-white py-2 pl-3 border-[1.5px] rounded-md cursor-pointer">
                     <i className='bx bxl-instagram text-[#D82D7E] text-xl w-[25px] h-[25px] bg-slate-100 rounded-full flex justify-center items-center'></i>
                     <p className="pl-4 text-[#9f9f9f]">Instagram</p> 
                 </div>

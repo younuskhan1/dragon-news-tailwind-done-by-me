@@ -23,7 +23,7 @@ const NewsCard = ({anews}) => {
                 <div className='h-auto pb-5 border-b-[1.5px]'>
                     <h1 className='px-4 text-[18px] font-bold text-[#403f3f] pt-2'>{anews.title}</h1>
                     <div className='w-full h-[250px] mt-4'>
-                        <img className='w-[96%] m-auto h-full' src={anews.thumbnail_url} alt="" />
+                        <img className='w-[96%] m-auto h-full' src={anews.image_url} alt="" />
                     </div>
                     <div>
                         {anews.details.length > 300 ? <p className='text-justify pt-5 w-[96%] m-auto'> {anews.details.slice(0,300)+ "..."} <Link className='text-[#1F21EF] font-bold' to="/">Read More</Link></p> : <p>{anews.details}</p>}
