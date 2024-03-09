@@ -5,9 +5,11 @@ import footballGround from "../../assets/3.png";
 import { useEffect, useState } from "react";
 
 
+
+
 const LeftSideNews = ({getSelectedCategory}) => {
     const [categoriesNames, setCategoriesNames] = useState([]);
-    
+
 
     useEffect(()=>{
         const fetchData = async()=>{
@@ -23,16 +25,24 @@ const LeftSideNews = ({getSelectedCategory}) => {
         fetchData();
     },[]);
 
+
     return (
         <div className="w-[100%] lg:w-[22%] mb-5">
             <h1 className="text-center text-black text-xl font-semibold">All Categories</h1>
             <ul className='pt-8'>
                 {categoriesNames.map((categoryName) => 
-                <li className='py-2 px-4 hover:bg-slate-200 rounded-sm text-center 
-                mb-3 cursor-pointer text-[#9f9f9f] hover:text-[#403f3f] font-bold 
+                <li className='category-button py-2 px-4 hover:bg-slate-200 rounded-sm text-center 
+                mb-3 cursor-pointer text-[#9f9f9f] hover:text-[#403f3f] font-bold  
                 transition-all ease-in duration-300' key={categoryName.id} onClick={()=>getSelectedCategory(categoryName.id)}>{categoryName.name}</li>)
                 }
             </ul>
+
+            {/*
+            className='py-2 px-4 hover:bg-slate-200 rounded-sm text-center 
+                mb-3 cursor-pointer text-[#9f9f9f] hover:text-[#403f3f] font-bold 
+                transition-all ease-in duration-300'
+            */}
+            
             <div>
                 <div className='w-full mt-4'>
                     <img className='w-full' src={cuteGirl} alt="cuteGirl" />

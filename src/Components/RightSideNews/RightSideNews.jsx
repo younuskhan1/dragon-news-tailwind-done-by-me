@@ -11,6 +11,21 @@ const RightSideNews = () => {
                 <button className="border-2 border-[#0D7FEE] text-[#0D7FEE] w-full py-1 rounded-md"><i className="fa-brands fa-google mr-3"></i>Login with Google</button>
                 <button className="border-2 border-black text-black w-full py-1 rounded-md mt-2"><i className="fa-brands fa-github mr-3"></i>Login with Github</button>
             </div>
+            <div className="mt-5">
+                <h1 className="text-[#403f3f] font-bold mb-3">Find Us On</h1>
+                <div className="w-full h-full flex justify-start items-center bg-white py-2 pl-3 border-[1.5px] rounded-md mb-1">
+                    <i className='bx bxl-facebook text-[#2227F2] text-xl w-[25px] h-[25px] bg-slate-100 rounded-full flex justify-center items-center'></i>
+                    <p className="pl-4 text-[#9f9f9f]">Facebook</p> 
+                </div>
+                <div className="w-full h-full flex justify-start items-center bg-white py-2 pl-3 border-[1.5px] rounded-md mb-1">
+                    <i className='bx bxl-twitter text-[#22D8F2] text-xl w-[25px] h-[25px] bg-slate-100 rounded-full flex justify-center items-center'></i>
+                    <p className="pl-4 text-[#9f9f9f]">Twitter</p> 
+                </div>
+                <div className="w-full h-full flex justify-start items-center bg-white py-2 pl-3 border-[1.5px] rounded-md">
+                    <i className='bx bxl-instagram text-[#D82D7E] text-xl w-[25px] h-[25px] bg-slate-100 rounded-full flex justify-center items-center'></i>
+                    <p className="pl-4 text-[#9f9f9f]">Instagram</p> 
+                </div>
+            </div>
             <div className="bg-slate-100 mt-8 w-full">
                 <h1 className="pl-5 pt-5 pb-8">Q-Zone</h1>
                 <div className="pb-6 w-full"><img className="w-full" src={swimming} alt="swimming" /></div>
